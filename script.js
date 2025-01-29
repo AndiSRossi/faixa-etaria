@@ -103,11 +103,11 @@ function mostrarFaixa() {
     var section = document.getElementById("faixaEtaria")
     var botao = document.getElementById("botaoMostrar")
   
-    if (section.style.display === "none") {
-      section.style.display = "block"
-      botao.value = "Ocultar faixa etária comuns"
-    } else {
+    if (section.style.display === "block") {
       section.style.display = "none"
       botao.value = "Mostrar faixa etária comuns"
+    } else {
+      section.style.display = "block"
+      botao.value = "Ocultar faixa etária comuns"
     }
   }
