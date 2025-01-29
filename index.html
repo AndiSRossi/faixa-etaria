@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="principal">
+            <header>
+                <h1>Faixa etária de idade.</h1>
+            </header>
+            <input type="button" value="Mostrar faixa etária comuns" onclick="mostrarFaixa() " id="botaoMostrar">
+            <p><strong>Ano: </strong>
+                <input type="number" name="nascimento" id="anoNas" placeholder="Digite o ano de nascimento" class="ano">
+            </p>
+            <p>Sexo:
+
+                <label>
+                    <input type="radio" name="genero" value="feminino"> Feminino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="masculino"> masculino
+                </label>
+            </p>
+
+            <input type="button" value="Verificar" onclick="resultado()">
+
+            <div class="resultado" id="resultado">
+                <div id="msg"></div>
+                <img id="imagem" src="" alt="" class="imagem">
+            </div>
+        </div>
+        <footer>
+            <p>Desenvolvido por Anderson Silva.</p>
+        </footer>
+    </section>
+
+    <section id="faixaEtaria">
+        <div class="principal">
+
+            <head>Aqui está a <strong>faixa etária</strong> de idade com base em categorias comuns</head>
+            <div class="grid-container">
+                <div class="grid-item">Faixa etária</div>
+                <div class="grid-item">idade (Anos)</div>
+                <div class="grid-item">Descrição</div>
+
+                <div class="grid-item"><strong>Bebe</strong></div>
+                <div class="grid-item"> 0 a 2 anos</div>
+                <div class="grid-item">Recém-nascidos e crianças muito pequenas.</div>
+
+                <div class="grid-item"><strong>Criança</strong></div>
+                <div class="grid-item">3 a 12 anos</div>
+                <div class="grid-item">Crianças em faze de crescimento e desenvolvimento.</div>
+
+                <div class="grid-item"><strong>Adolescente</strong></div>
+                <div class="grid-item">13 a 17 anos</div>
+                <div class="grid-item">Fase de transição para a idade adulta.</div>
+
+                <div class="grid-item"><strong>Jovem adulto</strong></div>
+                <div class="grid-item">18 a 29 anos</div>
+                <div class="grid-item">Primeira fase adulta, com novos desafios e responsabilidades.</div>
+
+                <div class="grid-item"><strong>Adulto</strong></div>
+                <div class="grid-item">30 a 59 anos</div>
+                <div class="grid-item">Adultos em sua faze madura, geralmente com a vida profissional e pessoal
+                    estabilizada.</div>
+
+                <div class="grid-item"><strong>Idoso</strong></div>
+                <div class="grid-item">60 anos ou mais</div>
+                <div class="grid-item">Idade avançada, aonde geralmente já está aposentado.</div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
