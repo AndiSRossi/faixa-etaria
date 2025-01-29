@@ -187,6 +187,11 @@ input[type="button"]:hover {
         width: 90%;
     }
 
+    input[type="button"] {
+        
+    font-size: 0.7rem;
+}
+
     footer {
         font-size: 0.9rem;
     }
