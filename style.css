@@ -65,7 +65,7 @@ footer{
 }
 
 input.ano {
-    width: 80%;
+    width: 52%;
     padding: 0.6rem;
     border: 0.1rem solid #ddd;
     border-radius: var(--radius);
